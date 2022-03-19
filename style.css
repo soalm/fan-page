@@ -8,17 +8,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
 }
 
 .title {
   margin-left: 40px;
   pointer-events: none;
-}
-
-.fsociety {
-}
-
-.menu {
 }
 
 .menu ul {
@@ -35,4 +31,22 @@ header {
 
 .menu li:hover {
   border-bottom: 5px solid red;
+}
+
+.main {
+  padding: 20px;
+}
+
+.main .elenco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.main h4 {
+  margin: auto;
+}
+.endpage {
+  font-size: small;
 }
