@@ -6,10 +6,16 @@
 
 header {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin-left: 40px;
+  pointer-events: none;
 }
 
 .fsociety {
-  flex: 1;
 }
 
 .menu {
@@ -21,7 +27,7 @@ header {
 }
 
 .menu li {
-  margin: 0 20px;
+  margin: 0 15px;
   cursor: pointer;
   display: flex;
   align-items: center;
