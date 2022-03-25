@@ -10,9 +10,19 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 3px solid red;
+  border-bottom: 1px solid red;
   padding-bottom: 20px;
   margin-top: 25px;
+}
+
+.fsociety img {
+  width: 70px;
+  transition: all 0.3s ease;
+  transform: translateX(0) scale(1);
+}
+
+.fsociety img:hover {
+  transform: translateX(2px) scale(1.05);
 }
 
 .title {
@@ -21,6 +31,11 @@ header {
 }
 .title img {
   width: 250px;
+  transform: translateX(0) scale(1);
+}
+
+.title:hover {
+  transform: translateX(5px) scale(1.2);
 }
 
 .menu ul {
@@ -34,13 +49,15 @@ header {
   display: flex;
   align-items: center;
   border-bottom: 3px solid white;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  transform: translateX(0) scale(1);
 }
 
 .menu li:hover {
   border-bottom: 3px solid red;
-  border-radius: 0px;
-  font-size: 16px;
-  font-weight: 500;
+
+  transform: translateX(5px) scale(1.2);
 }
 
 .homepage {
@@ -53,7 +70,7 @@ header {
 
 .main-elenco {
   background-color: rgb(0, 0, 0);
-  border-top: 3px solid red;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,25 +79,38 @@ header {
 
 .main-elenco h2 {
   color: white;
-  margin-top: 50px;
   border-bottom: 2px solid red;
+  position: fixed;
 }
 
 .elenco {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 50px;
+  margin: 10px;
   flex-wrap: wrap;
 }
 
 .elenco h4 {
-  margin: 40px;
+  margin: 70px;
+  max-width: 60%;
   font-size: 16px;
   color: whitesmoke;
   margin-bottom: 10px;
+  border-bottom: 2px solid red;
+  border-radius: 200px;
+  transition: all 0.3s;
+  transform: translateX(0) scale(1);
+}
+
+.elenco h4:hover,
+.elenco h4:focus {
+  font-size: 18px;
+  color: whitesmoke;
+  margin-bottom: 10px;
+  border-bottom: 4px solid red;
+  border-radius: 2px;
+  transform: translateX(5px) scale(1.1);
 }
 
 .elenco h4 p {
@@ -89,17 +119,21 @@ header {
 }
 
 .elenco img {
-  width: 200px;
   height: 250px;
-  border: 3px solid rgb(253, 253, 253);
-  border-radius: 25px;
+  border-radius: 300px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.elenco img:hover {
+  height: 250px;
+  border-radius: 2px;
+  object-fit: cover;
 }
 
 .sinopse-container {
   display: flex;
   justify-content: center;
-  border-top: 3px solid red;
-  border-bottom: 3px solid red;
 }
 
 .sinopse {
