@@ -55,7 +55,7 @@ header {
 }
 
 .menu li:hover {
-  border-bottom: 3px solid red;
+  border-bottom: 2px solid red;
 
   transform: translateX(5px) scale(1.2);
 }
@@ -66,11 +66,62 @@ header {
   background-image: url(/assets/img/elliot.jpeg);
   background-size: cover;
   background-position: bottom;
+  transition: all 0.3s ease;
+}
+
+.imagesBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.imagesBody h2 {
+  color: black;
+  border-bottom: 2px solid red;
+}
+
+.controls {
+  position: absolute;
+  z-index: 99;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.previmg,
+.nextimg {
+  color: rgb(37, 37, 37);
+  width: 50px;
+  height: 580px;
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 2px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  margin-top: 70.5px;
+}
+
+.imagesBody-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.imagesBody img {
+  height: 600px;
+  background-size: cover;
 }
 
 .main-elenco {
   background-color: rgb(0, 0, 0);
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,7 +131,7 @@ header {
 .main-elenco h2 {
   color: white;
   border-bottom: 2px solid red;
-  position: fixed;
+  margin-top: 80px;
 }
 
 .elenco {
@@ -89,6 +140,7 @@ header {
   justify-content: center;
   margin: 10px;
   flex-wrap: wrap;
+  margin-bottom: 80px;
 }
 
 .elenco h4 {
@@ -109,7 +161,7 @@ header {
   color: whitesmoke;
   margin-bottom: 10px;
   border-bottom: 4px solid red;
-  border-radius: 2px;
+  border-radius: 50px;
   transform: translateX(5px) scale(1.1);
 }
 
@@ -127,19 +179,25 @@ header {
 
 .elenco img:hover {
   height: 250px;
-  border-radius: 2px;
+  border-radius: 50px;
   object-fit: cover;
 }
 
 .sinopse-container {
   display: flex;
   justify-content: center;
+  background-color: rgb(207, 207, 207);
+}
+
+.sinopse-container img {
+  width: 500px;
+  margin: 50px;
+  box-shadow: 1px 1px 3px #000;
+  border-radius: 15px;
 }
 
 .sinopse {
-  margin-left: 30px;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin: 50px;
   width: 700px;
 }
 
