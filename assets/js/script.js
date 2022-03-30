@@ -34,4 +34,5 @@ function updateMargin() {
         `-${newMargin}px`;
 }
 
-setInterval(goNext, 5000);
+setInterval(goNext, 50000);
+
