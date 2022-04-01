@@ -63,10 +63,16 @@ header {
 .homepage {
   height: calc(100vh - 157px);
   background-color: rgb(71, 71, 71);
-  background-image: url(/assets/img/elliot.jpeg);
+  /*background-image: url(/assets/img/elliot.jpeg);*/
   background-size: cover;
   background-position: bottom;
   transition: all 0.3s ease;
+}
+
+.homepage img {
+  height: calc(100vh - 157px);
+  width: 100vw;
+  object-fit: cover;
 }
 
 .imagesBody {
