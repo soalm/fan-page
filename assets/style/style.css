@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Roboto;
+  overflow-x: hidden;
 }
 
 header {
@@ -70,7 +71,7 @@ header {
 }
 
 .homepage img {
-  height: calc(100vh - 157px);
+  height: calc(100vh - 153px);
   width: 100vw;
   object-fit: cover;
 }
@@ -204,11 +205,24 @@ header {
   background-color: rgb(207, 207, 207);
 }
 
+.sinopse h2 {
+  border-bottom: 2px solid red;
+  width: 90px;
+}
+
+.sinopse h4 {
+  font-weight: 200;
+}
+
+.img-sinopse {
+  width: 600px;
+}
+
 .sinopse-container img {
-  width: 500px;
+  max-width: 500px;
   margin: 50px;
   box-shadow: 1px 1px 3px #000;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .sinopse {
@@ -232,7 +246,7 @@ header {
   color: rgb(150, 148, 148);
 }
 
-@media (min-width: 450px) and (max-width: 800px) {
+@media (min-width: 450px) and (max-width: 820px) {
   .imagesBody img {
     width: 100vw;
   }
@@ -259,10 +273,14 @@ header {
     display: none;
   }
 
+  body {
+    width: 100vw;
+  }
+
   header {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 400px;
 
     border: none;
   }
@@ -271,38 +289,65 @@ header {
     width: 100vw;
   }
 
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .previmg,
+  .nextimg {
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    font-size: 25px;
+  }
+
+  .imagesBody h2 {
+    font-size: 20px;
+    width: 78px;
+  }
+
+  .main-elenco h2 {
+    font-size: 20px;
+  }
+
   .sinopse-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
   }
 
   .sinopse {
-    width: 500px;
+    width: 350px;
 
-    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: -20px;
   }
   .sinopse-container h2 {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    font-size: 20px;
+    border-bottom: 2px solid red;
+    width: 75px;
   }
 
   .sinopse-container h4 {
-    width: 100vw;
+    width: 70%;
+    font-weight: 200;
+    font-size: 14px;
   }
 
   .img-sinopse {
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
   }
 
   .img-sinopse img {
-    width: 100vw;
+    width: 300px;
   }
 }
